@@ -25,7 +25,6 @@ void wifi_on_off(bool bState){
     display.clearDisplay();
     display.setCursor(0,0);
     while (WiFi.status() != WL_CONNECTED) {
-      Serial.print(".");
 
       delay(1000);
       display.print(".");
